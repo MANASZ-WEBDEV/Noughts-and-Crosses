@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe Pro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="msg-container hide">
-        <p id="msg">Winner</p>
-        <button id="new-btn">New Game</button>
+      <p id="msg">Winner</p>
+      <button id="new-btn" class="control-btn">New Game</button>
     </div>
-    <main>
 
-        <h1>Tic Tac Toe</h1>
-        <!-- .container>.box*3 -->
-        <div class="container">
-            <div class="game">
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-            </div>
-        </div>
-        <button id="reset-btn">Reset Game</button>
-    </main>
+    <div class="header">
+      <h1>⚡ Tic Tac Toe Pro</h1>
+    </div>
+
+    <div class="game-info">
+      <div class="info-card">
+        <div class="info-label">Current Turn</div>
+        <div class="info-value" id="current-turn">O</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">X Wins</div>
+        <div class="info-value x-color" id="x-score">0</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">O Wins</div>
+        <div class="info-value o-color" id="o-score">0</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">Draws</div>
+        <div class="info-value" id="draw-score">0</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="game-board">
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+      </div>
+
+      <div class="controls">
+        <button id="reset-btn" class="control-btn">Reset Game</button>
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
